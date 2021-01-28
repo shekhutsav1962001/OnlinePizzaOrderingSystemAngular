@@ -1,0 +1,214 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*------------- ---------------------------------------------------- navbar -----------------------------------*/
+a{
+  font-family: 'Audiowide' ,cursive;
+}
+#colarr{
+  color: white;
+}
+#colarr:hover{
+  color: tomato;
+  transition: .8s;
+}
+#xy{
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: #090d00; */
+  width: 100%;
+  /* height: 90px  */
+  /* border : #2c3e50; */
+/* box-shadow: 0 0px 80px 40px rgba(0,0 , 0, 0.719); */
+  /* z-index: 1; */
+}
+
+ul li a{
+  position: relative;
+  padding: 16px 0 5px;
+  margin: 0 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Audiowide' ,cursive;
+  font-size: 16px;
+}
+
+.header{
+  width:100%;
+  height: 100vh;
+  background-image:url("../../../assets/pic/15.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  background-attachment: fixed;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Pacifico', cursive;
+  color:#ffffff;
+  font-weight: bolder;
+  text-shadow:5px 5px 10px black;
+  font-size: larger;
+
+  /* clip-path: polygon(100% 0%,100% 75%,50% 100%,0% 75%,0% 0%); */
+}
+/* caption with pic */
+#s3{
+  width:100%;
+  height: 300px;
+  background-image:url("../../../assets/pic/41.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  font-family: 'Pacifico', cursive;
+  background-attachment: fixed;
+  color:#ffffff;
+  font-weight: bolder;
+  text-shadow:5px 5px 10px black;
+  font-size: larger;
+}
+/* olny pic */
+#s4{
+  width:100%;
+  height: 300px;
+  background-image:url("../../../assets/pic/50.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  background-attachment: fixed;
+  color:#ffffff;
+  font-family: 'Pacifico', cursive;
+  font-weight: bolder;
+  text-shadow:5px 5px 10px black;
+  font-size: larger;
+
+}
+#s5{
+  width:100%;
+  height: 400px;
+  background-image:url("../../../assets/pic/61.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  background-attachment: fixed;
+  color:#ffffff;
+  font-family: 'Pacifico', cursive;
+  font-weight: bolder;
+  text-shadow:5px 5px 10px black;
+  font-size: larger;
+
+}
+
+
+/*----------------------------------------------------------------- navbar finish-----------------------------------*/
+
+/*----------------------------------------------------------------- niche right button -----------------------------------*/
+
+#mybtn{
+  /*    display: none;*/
+      position:fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      color: black;
+      background:white;
+      padding: 10px;
+      border-radius: 10px;
+  }
+#mybtn:hover{
+      color: #00abff;
+}
+
+/*----------------------------------------------------------------- niche right button finish-----------------------------------*/
+
+
+
+/*----------------------------------------------------------------- famous start-----------------------------------*/
+
+.card{
+  transition: 0.4s ease;
+  margin-bottom: 20px;
+}
+.card-body{
+  padding: 30px 0px !important;
+}
+
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
+
+}
+/*----------------------------------------------------------------- famous finish-----------------------------------*/
+
+
+
+
+
+
+.font-poppins {
+  font-family: 'Concert One', sans-serif;
+  color: #13974a;
+}
+
+.font-poppins:hover{
+color: #06642d;
+}
+
+
+
+h5{
+  color: #13974a;
+  font-family: Poppins, sans-serif;
+}
+h4{
+  font-family: Poppins, sans-serif;
+  letter-spacing: 2px;
+  color: gray;
+  text-transform: uppercase;
+}
+.card-footer
+{
+  color: #00abff;
+  text-decoration: none;
+}
+.card-footer :hover
+{
+  color: #24d6ee;
+  text-decoration: none;
+}
+
+p{
+  font-size: large;
+}
+
+
+.tomato{
+  color: tomato;
+}
+
+
+/* remove s3 when */
+@media screen and (max-width: 992px) {
+#s3,#s4,#s5{
+    display: none;
+}
+
+}
+@media screen and (max-width: 359px) {
+  #hdr{
+      display: none;
+  }
+
+}
+

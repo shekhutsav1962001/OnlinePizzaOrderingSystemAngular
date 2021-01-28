@@ -1,0 +1,45 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+/*----------------------------------------------------------------- navbar -----------------------------------*/
+a{
+  font-family: 'Audiowide' ,cursive;
+}
+#colarr{
+  color: white;
+}
+#colarr:hover{
+  color: tomato;
+  transition: .8s;
+}
+#xy{
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: #090d00; */
+  width: 100%;
+  /* height: 90px  
+  border : #2c3e50;
+box-shadow: 0 0px 80px 40px rgba(0,0 , 0, 0.719);
+  z-index: 1; */
+}
+
+ul li a{
+  position: relative;
+  padding: 16px 0 5px;
+  margin: 0 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Audiowide' ,cursive;
+  font-size: 16px;
+}

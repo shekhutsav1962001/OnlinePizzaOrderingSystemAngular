@@ -1,0 +1,19 @@
+<form>
+  <div>
+    <input type="file" name="image" (change)="selectImage($event)" />
+  </div>
+  <br>
+  <div>
+    <button type="submit" (click)="onSubmit()">Upload</button>
+  </div>
+</form>
+
+<button type="submit" (click)="c()">Upload</button>
+
+<button (click)="refresh()">Refresh</button>
+
+
+<button (click)="check()">Check</button>
+<div class="box" style="height: 500px;background-color: aqua;"  data-aos="zoom-in"></div>
+<div class="box" style="height: 500px;background-color: red;"  data-aos="flip-up"></div>
+<div class="box" style="height: 500px;background-color: blue;" data-aos="zoom-in"></div>

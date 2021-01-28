@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+  <app-ind></app-ind>
+  <!-- <section class="contact"> -->
+  <div class="content">
+    <h2>.</h2>
+  </div>
+  <div class="container">
+    <div class="contactFrom">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+        <h4>Add pizza for sell</h4>
+        <div style="color: red;" *ngIf="avail">
+          <h6> {{msg}}</h6>
+        </div>
+        <div class="inputBox">
+          <input type="text" name="pizzaname"  ngModel required #pizzaname="ngModel">
+          <span>Pizza name</span>
+        </div>
+        <div class="inputBox" >
+          <select  name="pizzasize" ngModel required #pizzasize="ngModel">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <span>Choose pizza size</span>
+
+        </div>
+        <div class="inputBox">
+          <input type="number" name="pizzaprice"  min="1" ngModel required #pizzaprice="ngModel">
+          <span>Pizza price</span>
+        </div>
+         <div class="inputBox">
+          <input type="file" name="pizzapic" title="choose pizza image" (change)="selectImage($event)" ngModel required #pizzapic="ngModel">
+          <!-- <span>Choose pizza pic</span> -->
+        </div>
+        <div class="inputBox">
+          <input type="submit" [disabled]="f.invalid" value="submit">
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- </section> -->
+</body>
+
+</html>

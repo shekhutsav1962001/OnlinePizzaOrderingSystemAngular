@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='uhome.css'> -->
+  <!-- nav font -->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    crossorigin="anonymous">
+
+
+  <!-- fafa -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <app-navbar></app-navbar>
+  <!-- </div> -->
+
+  <div class="container" id="container1">
+    <div class="row">
+
+      <div class="column" *ngFor="let pizza of pizzas">
+        <div class="parent">
+          <div class="preview">
+            <!-- <center> -->
+            <img src="../../../assets/pizza/{{pizza.pizzaimage}}" alt="" class="img-responsive">
+            <!-- </center> -->
+          </div>
+
+          <div class="info">
+
+            <table>
+              <tr>
+                <td colspan="2">
+                  <h6>{{pizza.pizzaname}}</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h6>Size:-</h6>
+                </td>
+                <td>
+                  <h6>{{pizza.pizzasize}}</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h6>Price:-</h6>
+                </td>
+
+                <td>
+                  <h6><span class="product-price">{{pizza.pizzaprice}}</span>RS</h6>
+                </td>
+
+              </tr>
+
+
+              <tr>
+                <td>
+                  <h6>Quantity:-</h6>
+                </td>
+
+                <td>
+                  <h6>{{pizza.qty}}</h6>
+                </td>
+
+              </tr>
+
+            </table>
+
+            <!-- <div class="product-quantity">
+              <input type="number" id="qty_input4" class="ab form-control form-control-sm"  min="1"
+                title="no of pizza"   (change)="update(pizza)">
+            </div> -->
+            <button class="btnn" (click)="deletefromcart(pizza)"> <i class="fa fa-trash" aria-hidden="true"></i></button>
+          </div>
+
+        </div>
+      </div>
+
+        <!------------------------------------------------total section------------------------------------------------------------------  -->
+
+      <div class="parent" style="background-color:rgb(235, 243, 251);margin-top: 15px;margin-bottom: 150px;" id="lastcol">
+
+        <div class="info">
+
+          <p style="margin-top: 5px;margin-bottom: 5px;">total = <b><span class="tot">{{total}}</span>Rs</b></p>
+          <p style="margin-top: 5px;margin-bottom: 5px;">delivery charge = <b><span class="dc">50</span>Rs</b></p>
+          <p style="margin-top: 5px;margin-bottom: 5px;">grand total =<b><span class="gt">{{total+50}}</span>Rs</b></p>
+          <button class="btn btn-success" id="last" style="margin-top: 5px;margin-bottom: 5px;" (click)="checkout()">Check out</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- hello -->
+</body>
+
+</html>

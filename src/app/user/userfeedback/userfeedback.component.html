@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- fafa -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <app-navbar></app-navbar>
+  <section class="contact">
+    <div class="content">
+      <h2>Contact us & Feedback</h2>
+
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>college road,nadiad.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>shekhutsav1962001@gmail.com</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+          <div class="text">
+            <h3>Phone no.</h3>
+            <p>7434069974</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="text">
+            <h3>Instagram</h3>
+            <p>@_._utsav</p>
+          </div>
+        </div>
+      </div>
+      <div class="contactFrom">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+          <h2>Send Message</h2>
+          <div class="inputBox">
+            <input type="text" name="name"  placeholder="Enter your name" ngModel required #name="ngModel"  autocomplete="off">
+          </div>
+          <div class="inputBox">
+            <input type="text" name="email"  placeholder="Enter your email" ngModel required #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  autocomplete="off">
+
+          </div>
+          <div class="inputBox">
+            <textarea name="msg" id="" cols="" rows="" placeholder="Enter your message"ngModel required #msg="ngModel"  autocomplete="off"></textarea>
+
+          </div>
+          <div class="inputBox">
+            <input type="submit" name="" [disabled]="f.invalid" value="submit" required="required">
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

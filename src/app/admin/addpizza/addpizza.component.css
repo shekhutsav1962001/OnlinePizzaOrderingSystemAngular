@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* max-height: vh; */
+}
+body{
+  width:100%;
+  min-height: 100vh;
+  background-image:url("../../../assets/pic/49.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  background-attachment: fixed;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* margin-top: 10px; */
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+
+    font-weight: 300;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color:#00bcd4;
+}
+
+.contactFrom{
+    /* margin-left: 20%; */
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactFrom h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactFrom .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactFrom .inputBox input,.contactFrom .inputBox textarea,.contactFrom .inputBox select{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactFrom .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactFrom .inputBox select:focus~span,
+.contactFrom .inputBox select:valid~span,
+.contactFrom .inputBox input:focus~span,
+.contactFrom .inputBox input:valid~span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactFrom .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+@media(max-width:991px)
+{
+    body{
+        background: url('../../../assets/pic/49.jpg');
+    }
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo,.contactFrom{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+
+
+

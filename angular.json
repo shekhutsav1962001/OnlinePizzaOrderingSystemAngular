@@ -24,9 +24,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/aos/dist/aos.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,8 +95,11 @@
             ],
             "styles": [
               "src/styles.css"
+
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           }
         },
         "lint": {
@@ -119,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "routing-demo"
+    }
+  },
+  "defaultProject": "routing-demo",
+  "cli": {
+    "analytics": "fe70b282-9dc6-4d45-983e-fc5e69a90ec6"
+  }
 }

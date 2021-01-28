@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+.ng-valid[required], .ng-valid.required  {
+  border-bottom: 2px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-bottom: 2px solid red; /* red */
+}
+input.ng-invalid.ng-touched {
+  border-bottom: 2px solid red;
+}

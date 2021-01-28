@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <app-navbar></app-navbar>
+
+  <form #f="ngForm">
+    <table class="table table-hover w-50 h-30"
+      style="background-color: white;   box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.5);">
+
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input type="text" class="field" name="name" placeholder="Enter name" [(ngModel)]="name" required>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Email</th>
+          <td><input type="text" class="field" name="email" placeholder="Enter email" [(ngModel)]="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Phone no</th>
+          <td><input type="text" class="field" name="contact"  pattern="^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$"
+              placeholder="Enter phone no" [(ngModel)]="contact" required>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2"><input type="button" class="btn btn-primary"  [disabled]="f.invalid" value="change"
+              (click)="change()"></th>
+        </tr>
+      </tbody>
+
+    </table>
+  </form>
+</body>
+
+</html>

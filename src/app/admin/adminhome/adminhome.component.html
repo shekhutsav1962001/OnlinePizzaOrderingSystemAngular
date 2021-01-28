@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Oswald|Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <app-ind></app-ind>
+  <div class="header">
+
+    <div class="alert alert-success alert-dismissible" *ngIf="avail">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      {{msg}}
+    </div>
+  </div>
+  <h1 class="text-center">Orders</h1>
+  <table class="table table-hover w-50"
+  style="background-color: white;  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.5);">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Userid</th>
+      <th scope="col">Pizzas</th>
+      <th scope="col">total</th>
+      <th scope="col">delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders;index as i">
+      <th scope="row">{{i+1}}</th>
+      <td class="text-danger" (click)="viewuser(order.whichuser)" >{{order.whichuser}}</td>
+      <td><button class="btn btn-link" (click)="seeorder(order)" ><i class="fa fa-eye" aria-hidden="true"></i></button></td>
+      <td >{{order.total}}</td>
+      <td><button class="btn btn-link" (click)="delete(order)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+      </td>
+
+
+    </tr>
+
+  </tbody>
+</table>
+</body>
+</html>

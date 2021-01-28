@@ -1,0 +1,356 @@
+/* font */
+.font-poppins {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+
+html {
+  /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+  background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  
+ 
+ 
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
+  width:100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image:url("../../../assets/pic/71.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    background-attachment: fixed;
+ 
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* fieldset {
+  min-width: 0;
+
+  border: 0;
+}
+ */
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+/* ==========================================================================
+   #PAGE WRAPPER
+   ========================================================================== */
+.page-wrapper {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+
+
+/* ==========================================================================
+   #SPACING
+   ========================================================================== */
+
+
+
+.p-t-180 {
+  padding-top: 180px;
+}
+.p-t-10 {
+  padding-top: 10px;
+}
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+.wrapper {
+  margin: 0 auto;
+}
+
+
+.wrapper--w780 {
+  max-width: 780px;
+}
+
+
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 33px;
+  font-family: Poppins, Arial, "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 18px;
+}
+
+.btn--radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn--pill {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.btn--green {
+  background: #57b846;
+}
+
+.btn--green:hover {
+  background: #318b21;
+}
+
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 33px;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+}
+
+.fa{
+  padding-right: 10px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+
+
+.input--style-3 {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #ccc;
+  background: transparent;
+}
+
+.input--style-3::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ccc;
+}
+
+.input--style-3:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+  opacity: 1;
+}
+
+.input--style-3::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ccc;
+  opacity: 1;
+}
+
+.input--style-3:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ccc;
+}
+
+.input--style-3:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ccc;
+}
+
+/* ==========================================================================
+   #TITLE
+   ========================================================================== */
+.title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+/* ==========================================================================
+   #CARD
+   ========================================================================== */
+.card {
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  /* animation: expand 1s ease forwards; */
+}
+
+.iforgot{
+  animation: forgot 1s ease forwards;
+}
+
+.ichangepassword{
+animation: changepassword 1s ease forwards;
+}
+
+.ilogin{
+animation: login 1s ease forwards;
+}
+
+.iregister{
+animation: register 1s ease forwards;
+}
+
+@keyframes login{
+ 
+0%  { transform: translate(0%, -100%);}
+100%{ transform: translate(0, 0);}
+
+}
+@keyframes register{
+ 
+
+ 
+  0%  { transform: translate(0%,-100%);}
+  100%{ transform: translate(0, 0);}
+
+}
+
+
+
+@keyframes forgot{
+ 
+0%  { transform: translate(-100%, -100%);}
+100%{ transform: translate(0, 0);}
+
+}
+
+@keyframes changepassword{
+ 
+0%  { transform: translate(-100%, -100%);}
+100%{ transform: translate(0, 0);}
+
+}
+
+
+
+
+
+
+.card-3 {
+  opacity: 0.89;
+  background: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  display: table;
+}
+.card-3 .card-body {
+  padding: 57px 65px;
+  padding-bottom: 65px;
+  display: table-cell;
+}
+
+/* .container {
+ 
+  animation: expand 1s ease forwards;
+ 
+ 
+} */
+
+
+.niche{
+padding-top: 10px;
+padding-left: 10px;
+font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+a{
+text-decoration: none;
+color: steelblue;
+padding-left: 10px;
+}
+
+#message {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  text-align: center;
+  align-items: center;
+  display:none;
+  background:transparent;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+
+}
+
+  
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color:#57b846;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: " ✓";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: rgb(238, 36, 36);
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✗";
+}

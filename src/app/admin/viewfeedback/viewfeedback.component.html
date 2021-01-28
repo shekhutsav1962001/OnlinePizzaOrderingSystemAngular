@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- fafa -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <app-ind></app-ind>
+  <table class="table table-hover w-50"
+    style="background-color: white; margin-top: 100px;  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.5);">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th scope="col">User's Name</th>
+        <th scope="col">Feedback <i class="fas fa-comment-dots" aria-hidden="true"></i></th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+
+      <tr *ngFor="let a of arr;index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{a.name}}</td>
+        <td>{{a.msg}}</td>
+        <td><button class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true" (click)="delete(a)"></i></button></td>
+      </tr>
+
+
+
+
+    </tbody>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+
+/* main content */
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+/* navbar  */
+
+
+/* below part is for glow section */
+.hh{
+padding-top: 2%;
+padding-bottom: 2%;
+ margin-bottom: 0;
+ background-color: #343A40;
+ font-family: cursive;
+ box-shadow: 0 0px 8px 4px rgba(0,0 , 0, 0.719);
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  -moz-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+  from {
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red; */
+    text-shadow: 0 0 10px red, 0 0 10px red, 0 0 10px red, 0 0 10px red, 0 0 10px red;
+    /* text-shadow: 0 0 10px rgb(133, 0, 0), 0 0 10px rgb(133, 0, 0), 0 0 10px rgb(133, 0, 0), 0 0 10px rgb(133, 0, 0), 0 0 10px rgb(133, 0, 0); */
+  }
+
+  to {
+      text-shadow: 0 0 10px rgb(133, 0, 0), 0 0 10px rgb(133, 0, 0), 0 0 10px rgb(133, 0, 0), 0 0 10px rgb(133, 0, 0), 0 0 10px rgb(133, 0, 0);
+    /* text-shadow: 0 0 20px #fff, 0 0 30px tomato, 0 0 40px t, 0 0 50px , 0 0 60px tomato, 0 0 70px tomato, 0 0 80px tomato; */
+  }
+}
+
+
+
+
